@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e41ff3c293.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <img src="logs.png.jpg" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()" aria-label="Close menu"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" aria-label="Open menu"></i>
+            </nav>
+            <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Bryan</span><br>Bergonia</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pogi.png.jpg" alt="About Me Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm currently studying in CvSU Bacoor, taking Bachelor of Science in Computer Science. I'm 20 years old from Dasmariñas, Cavite, and my hobbies are playing online games, reading manhwas, and watching anime.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- Skills Tab -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Designing Websites</li>
+                            <li><span>Game Developer</span><br>Creating Simple Games</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience Tab -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Second Year College</span><br>Creating Basics Website Projects</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Tab -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019-2020</span><br>Graduate of TVL</li>
+                            <li><span>2023-2024</span><br>Currently Studying of Bachelor of Science in Computer Science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Creating personal websites</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-star"></i>
+                    <h2>Game Developer</h2>
+                    <p>Creating basics games</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>Simple Website Design</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <h3>Luto System</h3>
+                    <p>Description</p>
+                    <a href="#"></a>
+                    <img src="luto.png.jpg" alt="Luto System Project">
+                    <br>
+                </div>
+                <div class="work">
+                    <h3>Luto System</h3>
+                    <p>Description</p>
+                    <a href="#"></a>
+                    <img src="luto.png.jpg" alt="Luto System Project">
+                    <br>
+                </div>
+                <div class="work">
+                    <h3>Luto System</h3>
+                    <p>Description</p>
+                    <a href="#"></i></a>
+                    <img src="luto.png.jpg" alt="Luto System Project">
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> bryanbergonia01@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 09161546009</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/bergonia.bryan?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/wshytbry"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com/@_4bryyy"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://x.com/bryy458419?t=-mKkFius2HA0ELUiLK2qfQ&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    <a href="Bryan Bergonia-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="copyright">
+            <p>© Bryan Bergonia. Built with <i class="fa-solid fa-heart"></i> for Personal Portfolio.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Tabs -->
+    <script>
+        const tablinks = document.querySelectorAll(".tab-links");
+        const tabcontents = document.querySelectorAll(".tab-contents");
+
+        function opentab(tabname) {
+            tablinks.forEach((tablink) => tablink.classList.remove("active-link"));
+            tabcontents.forEach((tabcontent) => tabcontent.classList.remove("active-tab"));
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- JavaScript for Menu -->
+    <script>
+        const sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-250px"; // Change this to suit your design
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzC5BGBoW2W_Eyi12Kq7zOPfYjH4-tXPX0Z-tbVZYe7OzOdxQpMYX33BP3rT99TZm6T/exec'
+        const form = document.forms['submit-to-google-sheet']
+        constmsg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
